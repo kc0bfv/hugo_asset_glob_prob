@@ -1,0 +1,33 @@
+<html>
+<body>
+
+Matching "Time/*"
+<ul>
+{{ range (resources.Match "Time/*") }}
+    <li>{{ .Name }}</li>
+{{ end }}
+</ul>
+
+Matching "time/*"
+<ul>
+{{ range (resources.Match "time/*") }}
+    <li>{{ .Name }}</li>
+{{ end }}
+</ul>
+
+Matching "*Time/*"
+<ul>
+{{ range (resources.Match "*Time/*") }}
+    <li>{{ .Name }}</li>
+{{ end }}
+</ul>
+
+Matching "*time/*"
+<ul>
+{{ range (resources.Match "*time/*") }}
+    <li>{{ .Name }}</li>
+{{ end }}
+</ul>
+
+</body>
+</html>
